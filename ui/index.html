@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rutina - Germás Stark</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #0f0f0f;
+            --surface: #1a1a1a;
+            --surface2: #242424;
+            --border: #2e2e2e;
+            --orange: #f97316;
+            --orange-dim: #7c3a0e;
+            --text: #f0f0f0;
+            --text-muted: #888;
+            --green: #22c55e;
+            --yellow: #eab308;
+            --red: #ef4444;
+            --radius: 12px;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+        .header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 20px 12px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .header-title {
+            font-size: 13px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: .08em;
+        }
+
+        .header-name {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .week-badge {
+            background: var(--orange);
+            color: white;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        /* WEEK SELECTOR */
+        .week-selector {
+            display: flex;
+            gap: 6px;
+            overflow-x: auto;
+            scrollbar-width: none;
+            padding-bottom: 2px;
+        }
+
+        .week-selector::-webkit-scrollbar {
+            display: none;
+        }
+
+        .week-btn {
+            flex-shrink: 0;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all .15s;
+        }
+
+        .week-btn.active {
+            background: var(--orange);
+            border-color: var(--orange);
+            color: white;
+        }
+
+        /* DAY TABS */
+        .day-tabs {
+            display: flex;
+            gap: 0;
+            border-bottom: 1px solid var(--border);
+            background: var(--surface);
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+
+        .day-tabs::-webkit-scrollbar {
+            display: none;
+        }
+
+        .day-tab {
+            flex-shrink: 0;
+            padding: 12px 20px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all .15s;
+            white-space: nowrap;
+        }
+
+        .day-tab.active {
+            color: var(--orange);
+            border-bottom-color: var(--orange);
+        }
+
+        .day-tab .subtitle {
+            font-size: 10px;
+            font-weight: 400;
+            display: block;
+            margin-top: 1px;
+            opacity: .6;
+        }
+
+        /* CONTENT */
+        .content {
+            padding: 16px;
+        }
+
+        /* GROUP LABEL */
+        .group-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--orange);
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            margin: 20px 0 8px;
+        }
+
+        .group-label:first-child {
+            margin-top: 0;
+        }
+
+        /* EXERCISE CARD */
+        .exercise-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .exercise-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            cursor: pointer;
+        }
+
+        .exercise-code {
+            background: var(--orange-dim);
+            color: var(--orange);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 6px;
+            flex-shrink: 0;
+        }
+
+        .exercise-name {
+            font-size: 15px;
+            font-weight: 600;
+            flex: 1;
+        }
+
+        .rpe-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .rpe-green {
+            background: var(--green);
+        }
+
+        .rpe-yellow {
+            background: var(--yellow);
+        }
+
+        .rpe-red {
+            background: var(--red);
+        }
+
+        .rpe-none {
+            background: var(--border);
+        }
+
+        /* STATS ROW */
+        .stats-row {
+            display: flex;
+            border-top: 1px solid var(--border);
+        }
+
+        .stat {
+            flex: 1;
+            padding: 10px 0;
+            text-align: center;
+            border-right: 1px solid var(--border);
+        }
+
+        .stat:last-child {
+            border-right: none;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: .06em;
+            margin-bottom: 3px;
+        }
+
+        .stat-value {
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .stat-value.empty {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        /* RPE LABEL */
+        .rpe-label {
+            padding: 8px 16px;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* PROGRESS BAR */
+        .progress-bar-wrap {
+            padding: 0 16px 14px;
+        }
+
+        .progress-bar-track {
+            height: 3px;
+            background: var(--border);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--orange);
+            border-radius: 2px;
+            transition: width .3s;
+        }
+
+        /* EMPTY STATE */
+        .empty {
+            color: var(--text-muted);
+            font-size: 14px;
+            padding: 32px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-top">
+            <div>
+                <div class="header-title">Plan de entrenamiento</div>
+                <div class="header-name">Germás Stark</div>
+            </div>
+            <div class="week-badge" id="currentWeekBadge">SEM 1</div>
+        </div>
+        <div class="week-selector" id="weekSelector"></div>
+    </div>
+
+    <div class="day-tabs" id="dayTabs"></div>
+
+    <div class="content" id="content"></div>
+
+    <script>
+        const data = {
+            weekGroups: ["SEMANA 1", "SEMANA 2", "SEMANA 3", "SEMANA 4", "SEMANA 5"],
+            days: [
+                {
+                    name: "DÍA 1", subtitle: "• FULLBODY",
+                    exercises: [
+                        {
+                            code: "A1", name: "Press Pallof con rotación", weeks: [
+                                { series: "3", reps: "8 x L", carga: "", rpe: "🟡" },
+                                { series: "3", reps: "8 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "A2", name: "Saltos al cajón", weeks: [
+                                { series: "3", reps: "6", carga: "50cm", rpe: "🟡" },
+                                { series: "3", reps: "5", carga: "60cm", rpe: "🟡" },
+                                { series: "3", reps: "5", carga: "80cm", rpe: "🟡" },
+                                { series: "3", reps: "5", carga: "80cm", rpe: "🟢" },
+                                { series: "3", reps: "5", carga: "80cm", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "B1", name: "Press plano", weeks: [
+                                { series: "4", reps: "6", carga: "60kg", rpe: "🟡" },
+                                { series: "4", reps: "6", carga: "65kg", rpe: "🟡" },
+                                { series: "4", reps: "6", carga: "70kg", rpe: "🟢" },
+                                { series: "4", reps: "6", carga: "75kg", rpe: "🟡" },
+                                { series: "3", reps: "3", carga: "82,5kg", rpe: "🟡" },
+                            ]
+                        },
+                        {
+                            code: "B2", name: "Sentadilla con barra", weeks: [
+                                { series: "4", reps: "6", carga: "60kg", rpe: "🟢" },
+                                { series: "4", reps: "6", carga: "70kg", rpe: "🟢" },
+                                { series: "4", reps: "6", carga: "80kg", rpe: "🟢" },
+                                { series: "4", reps: "6", carga: "85kg", rpe: "🟡" },
+                                { series: "3", reps: "3", carga: "95kg", rpe: "🟡" },
+                            ]
+                        },
+                        {
+                            code: "C1", name: "Curl de isquio en fitball", weeks: [
+                                { series: "3", reps: "8", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "12", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "14", carga: "", rpe: "🟡" },
+                            ]
+                        },
+                        {
+                            code: "C2", name: "Remo serrucho en banco", weeks: [
+                                { series: "3", reps: "8 x L", carga: "15kg", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "15kg", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "18kg", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "18kg", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "22,5kg", rpe: "🟡" },
+                            ]
+                        },
+                        {
+                            code: "C3", name: "Plancha lateral", weeks: [
+                                { series: "3", reps: "30\" x L", carga: "", rpe: "🟡" },
+                                { series: "3", reps: "30\" x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "30\" x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "30\" x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "30\" x L", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "D1", name: "Saltos laterales", weeks: [
+                                { series: "3", reps: "8 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10 x L", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "D2", name: "Curl de bíceps con mancuernas", weeks: [
+                                { series: "3", reps: "10", carga: "12.5KxL", rpe: "🔴" },
+                                { series: "3", reps: "10", carga: "12.5KxL", rpe: "🟡" },
+                                { series: "3", reps: "10", carga: "12.5KxL", rpe: "🟡" },
+                                { series: "3", reps: "10-12-FALLO", carga: "12.5KxL", rpe: "🔴" },
+                                { series: "3", reps: "10-12-FALLO", carga: "12.5KxL", rpe: "🔴" },
+                            ]
+                        },
+                        {
+                            code: "D3", name: "Tuck L-Sit en paralelas", weeks: [
+                                { series: "3", reps: "20\"", carga: "", rpe: "🟡" },
+                                { series: "3", reps: "20\"", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "20\"", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "MAX", carga: "", rpe: "🔴" },
+                                { series: "3", reps: "MAX", carga: "", rpe: "🔴" },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    name: "DÍA 2", subtitle: "• FULLBODY",
+                    exercises: [
+                        {
+                            code: "A1", name: "Plancha abdominal", weeks: [
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "A2", name: "Plancha lateral", weeks: [
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "A3", name: "Caminata del granjero", weeks: [
+                                { series: "3", reps: "8 x L", carga: "6+10", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "8+12", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "10+14", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "6+10", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "6+10", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "B1", name: "Hip Thrust a una pierna", weeks: [
+                                { series: "3", reps: "8 x L", carga: "10kg", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "10kg", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "12kg", rpe: "🟢" },
+                                { series: "3", reps: "6 x L", carga: "15kg", rpe: "🟡" },
+                                { series: "3", reps: "6 x L", carga: "18kg", rpe: "🟡" },
+                            ]
+                        },
+                        {
+                            code: "B2", name: "Saltos de 1 a 2", weeks: [
+                                { series: "3", reps: "4 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "4 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "4 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "4 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "4 x L", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "B3", name: "Chin Ups", weeks: [
+                                { series: "3", reps: "8-6-4", carga: "", rpe: "🔴" },
+                                { series: "3", reps: "8-6-4", carga: "", rpe: "🔴" },
+                                { series: "3", reps: "8-6-4", carga: "", rpe: "🔴" },
+                                { series: "3", reps: "7-7-5", carga: "", rpe: "🔴" },
+                                { series: "3", reps: "7-7-5", carga: "", rpe: "🔴" },
+                            ]
+                        },
+                        {
+                            code: "C1", name: "Subidas al banco pliométricas", weeks: [
+                                { series: "3", reps: "6 x L", carga: "30cm", rpe: "🟢" },
+                                { series: "3", reps: "6 x L", carga: "40cm", rpe: "🟢" },
+                                { series: "3", reps: "6 x L", carga: "40cm", rpe: "🟢" },
+                                { series: "3", reps: "6 x L", carga: "40cm", rpe: "🟢" },
+                                { series: "3", reps: "6 x L", carga: "40cm", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "C2", name: "Remo a un brazo en TRX", weeks: [
+                                { series: "3", reps: "8 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "10", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    name: "DÍA 3", subtitle: "• FULLBODY",
+                    exercises: [
+                        {
+                            code: "A1", name: "Plancha abdominal", weeks: [
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "30\"", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "A2", name: "Plancha lateral", weeks: [
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                                { series: "2", reps: "15\" x L", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "A3", name: "Caminata del granjero", weeks: [
+                                { series: "3", reps: "8 x L", carga: "6+10", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "8+12", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "10+14", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "10+15", rpe: "🟢" },
+                                { series: "3", reps: "8 x L", carga: "10+15", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "B1", name: "Peso Muerto con Trap Bar", weeks: [
+                                { series: "4", reps: "5", carga: "75kg", rpe: "🟡" },
+                                { series: "4", reps: "4", carga: "95kg", rpe: "🟡" },
+                                { series: "4", reps: "4", carga: "105kg", rpe: "🟡" },
+                                { series: "4", reps: "4", carga: "115kg", rpe: "🟡" },
+                                { series: "4", reps: "3", carga: "120kg", rpe: "🔴" },
+                            ]
+                        },
+                        {
+                            code: "B2", name: "Saltos horizontales", weeks: [
+                                { series: "3", reps: "3", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "3", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "3", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "3", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "3", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                        {
+                            code: "B3", name: "Fondos en paralelas", weeks: [
+                                { series: "3", reps: "3", carga: "", rpe: "🟡" },
+                                { series: "3", reps: "3", carga: "6kg", rpe: "🟡" },
+                                { series: "3", reps: "5", carga: "8kg", rpe: "🟡" },
+                                { series: "3", reps: "3", carga: "12kg", rpe: "🟡" },
+                                { series: "4", reps: "3", carga: "12kg", rpe: "🟡" },
+                            ]
+                        },
+                        {
+                            code: "C1", name: "Front Squat", weeks: [
+                                { series: "3", reps: "6", carga: "50kg", rpe: "🟡" },
+                                { series: "3", reps: "6", carga: "60kg", rpe: "🟡" },
+                                { series: "3", reps: "5", carga: "65kg", rpe: "🟡" },
+                                { series: "3", reps: "5", carga: "70kg", rpe: "🟡" },
+                                { series: "4", reps: "4", carga: "72,5kg", rpe: "🟡" },
+                            ]
+                        },
+                        {
+                            code: "C2", name: "Remo horizontal en Barra con Cajón", weeks: [
+                                { series: "3", reps: "6-8", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "8", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "9", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "11", carga: "", rpe: "🟢" },
+                                { series: "3", reps: "11", carga: "", rpe: "🟢" },
+                            ]
+                        },
+                    ]
+                }
+            ]
+        }
+
+        let currentWeek = 0
+        let currentDay = 0
+
+        function rpeClass(emoji) {
+            if (emoji === "🟢") return "rpe-green"
+            if (emoji === "🟡") return "rpe-yellow"
+            if (emoji === "🔴") return "rpe-red"
+            return "rpe-none"
+        }
+
+        function rpeText(emoji) {
+            if (emoji === "🟢") return "Podría hacer más intenso"
+            if (emoji === "🟡") return "Podría seguir con esta intensidad"
+            if (emoji === "🔴") return "Estoy al límite"
+            return ""
+        }
+
+        function groupLetter(code) {
+            return code.charAt(0)
+        }
+
+        function renderWeekSelector() {
+            const el = document.getElementById("weekSelector")
+            el.innerHTML = data.weekGroups.map((w, i) =>
+                `<button class="week-btn ${i === currentWeek ? "active" : ""}" onclick="selectWeek(${i})">${w.replace("SEMANA", "Sem")}</button>`
+            ).join("")
+            document.getElementById("currentWeekBadge").textContent = `Sem ${currentWeek + 1}`
+        }
+
+        function renderDayTabs() {
+            const el = document.getElementById("dayTabs")
+            el.innerHTML = data.days.map((d, i) =>
+                `<div class="day-tab ${i === currentDay ? "active" : ""}" onclick="selectDay(${i})">
+      ${d.name}
+      <span class="subtitle">${d.subtitle || ""}</span>
+    </div>`
+            ).join("")
+        }
+
+        function renderContent() {
+            const day = data.days[currentDay]
+            const el = document.getElementById("content")
+
+            // Group exercises by letter
+            const groups = {}
+            for (const ex of day.exercises) {
+                const g = groupLetter(ex.code)
+                if (!groups[g]) groups[g] = []
+                groups[g].push(ex)
+            }
+
+            let html = ""
+            for (const [letter, exercises] of Object.entries(groups)) {
+                html += `<div class="group-label">Bloque ${letter}</div>`
+                for (const ex of exercises) {
+                    const w = ex.weeks[currentWeek]
+                    const rpe = w?.rpe || ""
+                    const hasCarga = w?.carga && w.carga.trim()
+                    const hasSeries = w?.series && w.series.trim()
+                    const rpeLabel = rpeText(rpe)
+
+                    html += `
+        <div class="exercise-card">
+          <div class="exercise-header">
+            <span class="exercise-code">${ex.code}</span>
+            <span class="exercise-name">${ex.name}</span>
+            <span class="rpe-dot ${rpeClass(rpe)}"></span>
+          </div>
+          <div class="stats-row">
+            ${hasSeries ? `<div class="stat"><div class="stat-label">Series</div><div class="stat-value">${w.series}</div></div>` : ""}
+            <div class="stat"><div class="stat-label">Reps</div><div class="stat-value">${w?.reps || "—"}</div></div>
+            ${hasCarga ? `<div class="stat"><div class="stat-label">Carga</div><div class="stat-value">${w.carga}</div></div>` : ""}
+          </div>
+          ${rpeLabel ? `<div class="rpe-label"><span>${rpe}</span><span>${rpeLabel}</span></div>` : ""}
+        </div>`
+                }
+            }
+
+            el.innerHTML = html
+        }
+
+        function selectWeek(i) {
+            currentWeek = i
+            renderWeekSelector()
+            renderContent()
+        }
+
+        function selectDay(i) {
+            currentDay = i
+            renderDayTabs()
+            renderContent()
+        }
+
+        renderWeekSelector()
+        renderDayTabs()
+        renderContent()
+    </script>
+</body>
+
+</html>

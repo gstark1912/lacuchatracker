@@ -1,0 +1,2790 @@
+{
+  "spreadsheetId": "1yS82jhnPtaauYiTwSUf6xoJA_SOR0zU2HMe0f79z1pk",
+  "sheetName": "1° Plan",
+  "weekGroups": [
+    {
+      "weekLabel": "SEMANA 1",
+      "headerRow": 12,
+      "startColumn": 11,
+      "fields": {
+        "series": 15,
+        "reps": 16,
+        "carga": 17,
+        "rpe": 18
+      }
+    },
+    {
+      "weekLabel": "SEMANA 2",
+      "headerRow": 12,
+      "startColumn": 15,
+      "fields": {
+        "series": 19,
+        "reps": 20,
+        "carga": 21,
+        "rpe": 22
+      }
+    },
+    {
+      "weekLabel": "SEMANA 3",
+      "headerRow": 12,
+      "startColumn": 19,
+      "fields": {
+        "series": 23,
+        "reps": 24,
+        "carga": 25,
+        "rpe": 26
+      }
+    },
+    {
+      "weekLabel": "SEMANA 4",
+      "headerRow": 12,
+      "startColumn": 23,
+      "fields": {
+        "series": 27,
+        "reps": 28,
+        "carga": 29,
+        "rpe": 30
+      }
+    },
+    {
+      "weekLabel": "SEMANA 5",
+      "headerRow": 12,
+      "startColumn": 27,
+      "fields": {
+        "series": 27,
+        "reps": 28,
+        "carga": 29,
+        "rpe": 30
+      }
+    }
+  ],
+  "days": [
+    {
+      "name": "DÍA 1",
+      "row": 15,
+      "exercises": [
+        {
+          "row": 15,
+          "code": "A1",
+          "name": "Press Pallof con rotación",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "8 x L",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "8 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 16,
+          "code": "A2",
+          "name": "Saltos al cajón",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "5",
+                "carga": "60cm",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "5",
+                "carga": "80cm",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "5",
+                "carga": "80cm",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "5",
+                "carga": "80cm",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "5",
+                "carga": "80cm",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 17,
+          "code": "B1",
+          "name": "Press plano",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "4",
+                "reps": "6",
+                "carga": "65kg",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "4",
+                "reps": "6",
+                "carga": "70",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "4",
+                "reps": "6",
+                "carga": "75kg",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "3",
+                "carga": "82,5",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "3",
+                "carga": "82,5",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 18,
+          "code": "B2",
+          "name": "Sentadilla con barra",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "6",
+                "carga": "70kg",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "6",
+                "carga": "80kg",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "6",
+                "carga": "85kg",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "95",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "95",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 19,
+          "code": "C1",
+          "name": "Curl de isquio en fitball",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "10",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "10",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "12",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "14",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "14",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 20,
+          "code": "C2",
+          "name": "Remo serrucho en banco",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "10 x L",
+                "carga": "15kg",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "18kg",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "10 x L",
+                "carga": "18kg",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "22,5",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "22,5",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 21,
+          "code": "C3",
+          "name": "Plancha lateral",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "30\" x L",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "30\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "30\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "30\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "30\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 22,
+          "code": "D1",
+          "name": "Saltos laterales",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "8 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 23,
+          "code": "D2",
+          "name": "Curl de bíceps con mancuernas",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "10",
+                "carga": "12.5KxL",
+                "rpe": " 🔴  -  Estoy al límite"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "10",
+                "carga": "12.5KxL",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "10",
+                "carga": "12.5KxL",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "10-12-FALLO",
+                "carga": "12.5KxL",
+                "rpe": " 🔴  -  Estoy al límite"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "10-12-FALLO",
+                "carga": "12.5KxL",
+                "rpe": " 🔴  -  Estoy al límite"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 24,
+          "code": "D3",
+          "name": "Tuck L-Sit en paralelas",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "20\"",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "20\"",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "20\"",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "MAX",
+                "carga": "",
+                "rpe": " 🔴  -  Estoy al límite"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "MAX",
+                "carga": "",
+                "rpe": " 🔴  -  Estoy al límite"
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        }
+      ],
+      "subtitle": "• FULLBODY"
+    },
+    {
+      "name": "DÍA 2",
+      "row": 26,
+      "exercises": [
+        {
+          "row": 26,
+          "code": "A1",
+          "name": "Plancha abdominal",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 27,
+          "code": "A2",
+          "name": "Plancha lateral",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 28,
+          "code": "A3",
+          "name": "Caminata del granjero",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "6 + 10",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "8 + 12",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "10 + 14",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "6 + 10",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "6 + 10",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 29,
+          "code": "B1",
+          "name": "Hip Thrust a una pierna",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "8 x L",
+                "carga": "10kg",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "8 x L",
+                "carga": "12kg",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "8 x L",
+                "carga": "15kg",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "6 x L",
+                "carga": "18kg",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "6 x L",
+                "carga": "18kg",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 30,
+          "code": "B2",
+          "name": "Saltos de 1 a 2",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "4 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "4 x L",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "4 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "4 x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "4 x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 31,
+          "code": "B3",
+          "name": "Chin Ups",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "8-6-4",
+                "carga": "",
+                "rpe": " 🔴  -  Estoy al límite"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "8-6-4",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "8-6-4",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "7-7-5",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "7-7-5",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 32,
+          "code": "C1",
+          "name": "Subidas al banco pliometricas",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "6 x L",
+                "carga": "40cm",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "6 x L",
+                "carga": "40cm",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "6 x L",
+                "carga": "40cm",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "6 x L",
+                "carga": "40cm",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "6 x L",
+                "carga": "40cm",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 33,
+          "code": "C2",
+          "name": "Remo a un brazo en TRX",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "10",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "10",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "10",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 34,
+          "code": "C3",
+          "name": "Press Pallof 2.0",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "15'x",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "15'x",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "15'x",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "15'x",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "15'x",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 35,
+          "code": "D1",
+          "name": "Jerk con barra",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "4",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "4",
+                "carga": "40",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "3 x L",
+                "carga": "40",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "4 x L",
+                "carga": "40",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "4 x L",
+                "carga": "40",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 36,
+          "code": "D2",
+          "name": "Monster Walk",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "20",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "20",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "20",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "15 x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "15 x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        }
+      ],
+      "subtitle": "• FULLBODY"
+    },
+    {
+      "name": "DÍA 3",
+      "row": 38,
+      "exercises": [
+        {
+          "row": 38,
+          "code": "A1",
+          "name": "Plancha abdominal",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "2",
+                "reps": "30\"",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 39,
+          "code": "A2",
+          "name": "Plancha lateral",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "15\" x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 40,
+          "code": "A3",
+          "name": "Caminata del granjero",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "6 + 10",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "8 + 12",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "10 + 15",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "6 + 10",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "8 x L",
+                "carga": "6 + 10",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 41,
+          "code": "B1",
+          "name": "Peso Muerto con Trap Bar",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "4",
+                "carga": "95",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "4",
+                "carga": "105",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "4",
+                "carga": "115",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "3",
+                "carga": "120",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "3",
+                "carga": "120",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 42,
+          "code": "B2",
+          "name": "Saltos horizontales",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 43,
+          "code": "B3",
+          "name": "Fondos en paralelas",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "5",
+                "carga": "6kg",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "5",
+                "carga": "8kg",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "5",
+                "carga": "10kg",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "12",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "3",
+                "carga": "12",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 44,
+          "code": "C1",
+          "name": "Front Squat",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "6",
+                "carga": "60",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "5",
+                "carga": "65",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "5",
+                "carga": "70",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "4",
+                "carga": "72,5",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "4",
+                "carga": "72,5",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 45,
+          "code": "C2",
+          "name": "Remo horizontal en Barra con Cajón",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "8",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "9",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "10",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "11",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "11",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 46,
+          "code": "C3",
+          "name": "Bicho muerto avanzado",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "8",
+                "carga": "12",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "10",
+                "carga": "12",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "11",
+                "carga": "12",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "12",
+                "carga": "12",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "12",
+                "carga": "12",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 47,
+          "code": "D1",
+          "name": "Woodchop con Kettlebell",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "3",
+                "reps": "3 x L",
+                "carga": "12kg",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "3",
+                "reps": "4 x L",
+                "carga": "12kg",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "3",
+                "reps": "5 x L",
+                "carga": "12",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "3",
+                "reps": "5 x L",
+                "carga": "12",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "3",
+                "reps": "5 x L",
+                "carga": "12",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 48,
+          "code": "D2",
+          "name": "Pliometría en posición dividida",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟢  -  Podría hacer más intenso"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "10 x L",
+                "carga": "",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        },
+        {
+          "row": 49,
+          "code": "D3",
+          "name": "Sentadilla isométrica unipodal en la pared",
+          "weeks": [
+            {
+              "weekLabel": "SEMANA 1",
+              "values": {
+                "series": "",
+                "reps": "12\" x L",
+                "carga": "6kg x L",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 15,
+                "reps": 16,
+                "carga": 17,
+                "rpe": 18
+              }
+            },
+            {
+              "weekLabel": "SEMANA 2",
+              "values": {
+                "series": "",
+                "reps": "15\"",
+                "carga": "6kg x L",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 19,
+                "reps": 20,
+                "carga": 21,
+                "rpe": 22
+              }
+            },
+            {
+              "weekLabel": "SEMANA 3",
+              "values": {
+                "series": "",
+                "reps": "15\"",
+                "carga": "6kg x L",
+                "rpe": " 🟡  -  Podría seguir con esta intensidad"
+              },
+              "columns": {
+                "series": 23,
+                "reps": 24,
+                "carga": 25,
+                "rpe": 26
+              }
+            },
+            {
+              "weekLabel": "SEMANA 4",
+              "values": {
+                "series": "",
+                "reps": "17\"",
+                "carga": "6kg x L",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            },
+            {
+              "weekLabel": "SEMANA 5",
+              "values": {
+                "series": "",
+                "reps": "17\"",
+                "carga": "6kg x L",
+                "rpe": ""
+              },
+              "columns": {
+                "series": 27,
+                "reps": 28,
+                "carga": 29,
+                "rpe": 30
+              }
+            }
+          ]
+        }
+      ],
+      "subtitle": "• FULLBODY"
+    }
+  ]
+}

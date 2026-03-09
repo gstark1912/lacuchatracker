@@ -1,0 +1,21 @@
+{
+    "name": "gym-sheet-reader",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "test": "vitest --run",
+        "test:watch": "vitest",
+        "debug": "node --loader ts-node/esm src/debug.ts"
+    },
+    "dependencies": {
+        "@googleapis/sheets": "^9.0.0",
+        "dotenv": "^17.3.1",
+        "googleapis": "^144.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "fast-check": "^3.22.0",
+        "typescript": "^5.6.0",
+        "vitest": "^2.1.0"
+    }
+}
