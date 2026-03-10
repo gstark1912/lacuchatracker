@@ -50,7 +50,7 @@ export const useWorkoutStore = defineStore("workout", () => {
         return appState.value?.progression[exerciseCode] ?? []
     }
 
-    function updateExercise(
+    async function updateExercise(
         sessionIndex: number,
         exerciseCode: string,
         fields: Partial<{ series: string; reps: string; carga: string; rpe: string }>
@@ -59,7 +59,29 @@ export const useWorkoutStore = defineStore("workout", () => {
         const session = appState.value.sessions[sessionIndex]
         const ex = session?.exercises.find((e) => e.code === exerciseCode)
         if (!ex) return
+
+        // Optimistic update
         Object.assign(ex, fields)
+
+        // Write each changed field to the sheet
+        const colMap: Record<string, number | null> = {
+            series: ex.columns.series,
+            reps: ex.columns.reps,
+            carga: ex.columns.carga,
+            rpe: ex.columns.rpe,
+        }
+
+        await Promise.all(
+            Object.entries(fields)
+                .filter(([key, val]) => val !== undefined && colMap[key] != null)
+                .map(([key, val]) =>
+                    fetch("/api/plan/cell", {
+                        method: "PATCH",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ row: ex.sheetRow, column: colMap[key], value: val }),
+                    })
+                )
+        )
     }
 
     return {

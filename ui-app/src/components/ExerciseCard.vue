@@ -2,6 +2,13 @@
 import { ref } from "vue"
 import type { SessionExercise, Session } from "../types"
 
+const RPE_OPTIONS = [
+    { value: " 🟢  -  Podría hacer más intenso", label: "🟢  Podría hacer más intenso" },
+    { value: " 🟡  -  Podría seguir con esta intensidad", label: "🟡  Podría seguir con esta intensidad" },
+    { value: " 🔴  -  Estoy al límite", label: "🔴  Estoy al límite" },
+    { value: " \u26AB  -  Debería bajar la intensidad", label: "\u26AB  Debería bajar la intensidad" },
+]
+
 const props = defineProps<{
     exercise: SessionExercise
     history: Session[]  // sesiones anteriores para progresión
@@ -32,7 +39,7 @@ function cancelEdit() {
 
 // Extraer emoji del RPE para mostrar compacto
 function rpeEmoji(rpe: string): string {
-    const match = rpe.match(/[\u{1F7E2}\u{1F7E1}\u{1F534}]/u)
+    const match = rpe.match(/[\u{1F7E2}\u{1F7E1}\u{1F534}\u26AB]/u)
     return match ? match[0] : ""
 }
 </script>
@@ -64,7 +71,8 @@ function rpeEmoji(rpe: string): string {
             </div>
             <div class="value-item rpe" v-if="exercise.rpe">
                 <span class="rpe-emoji">{{ rpeEmoji(exercise.rpe) }}</span>
-                <span class="rpe-text">{{ exercise.rpe.replace(/^\s*[\u{1F7E2}\u{1F7E1}\u{1F534}]\s*-\s*/u, "") }}</span>
+                <span class="rpe-text">{{ exercise.rpe.replace(/^\s*[\u{1F7E2}\u{1F7E1}\u{1F534}\u26AB]\s*-\s*/u, "")
+                    }}</span>
             </div>
         </div>
 
@@ -73,7 +81,15 @@ function rpeEmoji(rpe: string): string {
             <label>Series <input v-model="draft.series" /></label>
             <label>Reps <input v-model="draft.reps" /></label>
             <label>Carga <input v-model="draft.carga" /></label>
-            <label>RPE <input v-model="draft.rpe" /></label>
+            <label class="label-full">
+                RPE
+                <select v-model="draft.rpe">
+                    <option value="">— Sin registrar —</option>
+                    <option v-for="opt in RPE_OPTIONS" :key="opt.value" :value="opt.value">
+                        {{ opt.label }}
+                    </option>
+                </select>
+            </label>
             <div class="edit-actions">
                 <button class="btn-save" @click="saveEdit">Guardar</button>
                 <button class="btn-cancel" @click="cancelEdit">Cancelar</button>
@@ -83,11 +99,7 @@ function rpeEmoji(rpe: string): string {
         <!-- Historial de progresión -->
         <div v-if="showHistory" class="history">
             <div class="history-title">Progresión</div>
-            <div
-                v-for="session in history"
-                :key="session.weekLabel"
-                class="history-row"
-            >
+            <div v-for="session in history" :key="session.weekLabel" class="history-row">
                 <span class="history-week">{{ session.weekLabel }}</span>
                 <template v-for="ex in session.exercises.filter(e => e.code === exercise.code)" :key="ex.code">
                     <span>{{ ex.series ? ex.series + "×" : "" }}{{ ex.reps }}</span>
@@ -105,14 +117,16 @@ function rpeEmoji(rpe: string): string {
     border-radius: 12px;
     padding: 12px 14px;
     margin-bottom: 10px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
 }
+
 .card-header {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 8px;
 }
+
 .code {
     font-weight: 700;
     font-size: 0.75rem;
@@ -122,15 +136,18 @@ function rpeEmoji(rpe: string): string {
     padding: 2px 7px;
     flex-shrink: 0;
 }
+
 .name {
     font-size: 0.9rem;
     font-weight: 600;
     flex: 1;
 }
+
 .actions {
     display: flex;
     gap: 4px;
 }
+
 .btn-icon {
     background: none;
     border: none;
@@ -138,11 +155,13 @@ function rpeEmoji(rpe: string): string {
     font-size: 1rem;
     padding: 2px;
 }
+
 .card-values {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
+
 .value-item {
     display: flex;
     flex-direction: column;
@@ -152,16 +171,19 @@ function rpeEmoji(rpe: string): string {
     padding: 4px 10px;
     min-width: 52px;
 }
+
 .label {
     font-size: 0.65rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.04em;
 }
+
 .val {
     font-size: 0.95rem;
     font-weight: 600;
 }
+
 .rpe {
     flex-direction: row;
     align-items: center;
@@ -170,14 +192,22 @@ function rpeEmoji(rpe: string): string {
     min-width: 120px;
     justify-content: flex-start;
 }
-.rpe-emoji { font-size: 1.1rem; }
-.rpe-text { font-size: 0.75rem; color: var(--text-muted); }
+
+.rpe-emoji {
+    font-size: 1.1rem;
+}
+
+.rpe-text {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
 
 .card-edit {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
 }
+
 .card-edit label {
     display: flex;
     flex-direction: column;
@@ -185,6 +215,7 @@ function rpeEmoji(rpe: string): string {
     color: var(--text-muted);
     gap: 3px;
 }
+
 .card-edit input {
     border: 1px solid var(--border);
     border-radius: 6px;
@@ -193,12 +224,28 @@ function rpeEmoji(rpe: string): string {
     background: var(--input-bg);
     color: var(--text);
 }
+
+.label-full {
+    grid-column: span 2;
+}
+
+.card-edit select {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 8px;
+    font-size: 0.9rem;
+    background: var(--input-bg);
+    color: var(--text);
+    width: 100%;
+}
+
 .edit-actions {
     grid-column: span 2;
     display: flex;
     gap: 8px;
     justify-content: flex-end;
 }
+
 .btn-save {
     background: var(--accent);
     color: #fff;
@@ -208,6 +255,7 @@ function rpeEmoji(rpe: string): string {
     cursor: pointer;
     font-weight: 600;
 }
+
 .btn-cancel {
     background: var(--chip-bg);
     border: none;
@@ -221,6 +269,7 @@ function rpeEmoji(rpe: string): string {
     border-top: 1px solid var(--border);
     padding-top: 8px;
 }
+
 .history-title {
     font-size: 0.7rem;
     text-transform: uppercase;
@@ -228,6 +277,7 @@ function rpeEmoji(rpe: string): string {
     margin-bottom: 6px;
     letter-spacing: 0.05em;
 }
+
 .history-row {
     display: flex;
     gap: 10px;
@@ -235,11 +285,15 @@ function rpeEmoji(rpe: string): string {
     font-size: 0.82rem;
     padding: 3px 0;
 }
+
 .history-week {
     font-weight: 600;
     min-width: 80px;
     color: var(--accent);
     font-size: 0.75rem;
 }
-.history-carga { color: var(--text-muted); }
+
+.history-carga {
+    color: var(--text-muted);
+}
 </style>

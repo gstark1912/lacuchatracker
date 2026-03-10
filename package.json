@@ -5,7 +5,7 @@
     "scripts": {
         "test": "vitest --run",
         "test:watch": "vitest",
-        "debug": "node --loader ts-node/esm src/debug.ts",
+        "auth-setup": "node --loader ts-node/esm src/auth-setup.ts",
         "server": "node --loader ts-node/esm src/server.ts",
         "ui": "npm run dev --prefix ui-app",
         "dev": "concurrently \"npm run server\" \"npm run ui\""
