@@ -57,21 +57,15 @@ export function detectFieldsForWeek(
 
     for (let r = weekRow; r <= weekRow + 3 && r < rowCount; r++) {
         const row = matrix[r];
-        // Scan right of weekCol for all fields
-        for (let c = weekCol; c < weekCol + 8 && c < row.length; c++) {
+        // Each week block spans exactly 4 columns starting at weekCol:
+        // weekCol=Series, weekCol+1=Reps, weekCol+2=Carga, weekCol+3=RPE
+        // The week label ("SEMANA N") shares the Series column header row.
+        for (let c = weekCol; c < weekCol + 4 && c < row.length; c++) {
             const cell = normalize(row[c]);
             if (cell.includes("series")) fields.series = c + 1;
             else if (cell.includes("reps")) fields.reps = c + 1;
             else if (cell.includes("carga")) fields.carga = c + 1;
             else if (cell === "rpe") fields.rpe = c + 1;
-        }
-        // Also scan left of weekCol for "series" (shared Series column, Req 3.5)
-        for (let c = 0; c < weekCol && c < row.length; c++) {
-            const cell = normalize(row[c]);
-            if (cell.includes("series")) {
-                // Only set if not already found to the right
-                if (fields.series === undefined) fields.series = c + 1;
-            }
         }
     }
 

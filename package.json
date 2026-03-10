@@ -5,17 +5,42 @@
     "scripts": {
         "test": "vitest --run",
         "test:watch": "vitest",
-        "debug": "node --loader ts-node/esm src/debug.ts"
+        "debug": "node --loader ts-node/esm src/debug.ts",
+        "server": "node --loader ts-node/esm src/server.ts",
+        "ui": "npm run dev --prefix ui-app",
+        "dev": "concurrently \"npm run server\" \"npm run ui\""
     },
     "dependencies": {
         "@googleapis/sheets": "^9.0.0",
+        "cors": "^2.8.6",
         "dotenv": "^17.3.1",
+        "express": "^5.2.1",
         "googleapis": "^144.0.0"
     },
     "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.6",
         "@types/node": "^22.0.0",
+        "concurrently": "^9.2.1",
         "fast-check": "^3.22.0",
+        "ts-node": "^10.9.2",
         "typescript": "^5.6.0",
         "vitest": "^2.1.0"
-    }
+    },
+    "description": "Parser de planillas de entrenamiento desde Google Sheets, con un prototipo de UI mobile-first para visualizar la rutina semanal.",
+    "main": "index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gstark1912/lacuchatracker.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gstark1912/lacuchatracker/issues"
+    },
+    "homepage": "https://github.com/gstark1912/lacuchatracker#readme"
 }
