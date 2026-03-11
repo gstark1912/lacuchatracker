@@ -9,7 +9,9 @@ export function buildAppState(plan: WorkoutPlan): AppState {
 
     // Construir sesiones: por cada semana × día
     for (let weekIndex = 0; weekIndex < plan.weekGroups.length; weekIndex++) {
-        const { weekLabel } = plan.weekGroups[weekIndex]
+        const weekGroup = plan.weekGroups[weekIndex]
+        if (!weekGroup) continue
+        const { weekLabel } = weekGroup
 
         for (const day of plan.days) {
             const exercises: SessionExercise[] = day.exercises.map((ex) => {
@@ -41,7 +43,7 @@ export function buildAppState(plan: WorkoutPlan): AppState {
     for (const session of sessions) {
         for (const ex of session.exercises) {
             if (!progression[ex.code]) progression[ex.code] = []
-            progression[ex.code].push(session)
+            progression[ex.code]!.push(session)
         }
     }
 
