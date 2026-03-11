@@ -14,7 +14,7 @@ app.use(express.json())
 
 // Servir el frontend buildeado en producción
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const distPath = join(__dirname, "../ui-app/dist")
+const distPath = join(__dirname, "../../ui-app/dist")
 app.use(express.static(distPath))
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID ?? "1yS82jhnPtaauYiTwSUf6xoJA_SOR0zU2HMe0f79z1pk"
