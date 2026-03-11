@@ -3,12 +3,19 @@ import cors from "cors"
 import { config } from "dotenv"
 import { google } from "googleapis"
 import { readSheet } from "./sheet-reader.js"
+import { fileURLToPath } from "url"
+import { join, dirname } from "path"
 
 config()
 
 const app = express()
 app.use(cors())
 app.use(express.json())
+
+// Servir el frontend buildeado en producción
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const distPath = join(__dirname, "../ui-app/dist")
+app.use(express.static(distPath))
 
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID ?? "1yS82jhnPtaauYiTwSUf6xoJA_SOR0zU2HMe0f79z1pk"
 const SHEET_NAME = process.env.SHEET_NAME ?? "1° Plan"
@@ -89,6 +96,11 @@ app.patch("/api/plan/cell", async (req, res) => {
         const msg = e instanceof Error ? e.message : String(e)
         res.status(500).json({ error: msg })
     }
+})
+
+// SPA fallback — cualquier ruta no-API devuelve el index.html
+app.get("*", (_req, res) => {
+    res.sendFile(join(distPath, "index.html"))
 })
 
 const PORT = process.env.PORT ?? 3001

@@ -79,7 +79,13 @@ GOOGLE_REFRESH_TOKEN=tu_refresh_token
 npm run dev
 ```
 
-Esto levanta el servidor Express en `:3001` y el frontend Vite en `:5173` de forma concurrente.
+Levanta ambos procesos en paralelo:
+- Express en `http://localhost:3001` (API)
+- Vite en `http://localhost:5173` (UI, con proxy `/api` → `:3001`)
+
+Abrí `http://localhost:5173` en el navegador.
+
+> En producción (Railway) Express sirve también el frontend estático desde `ui-app/dist`. Localmente Vite se encarga de eso, no hace falta buildear.
 
 ## Variables de entorno — cómo conseguirlas
 
@@ -145,10 +151,13 @@ El script levanta un servidor local, abre una URL de autorización en la consola
 2. Conectar el repositorio de GitHub
 3. Agregar las variables de entorno en el panel de Railway:
    - `SHEETS_API_KEY`
+   - `SPREADSHEET_ID`
+   - `SHEET_NAME`
    - `GOOGLE_CLIENT_ID`
    - `GOOGLE_CLIENT_SECRET`
    - `GOOGLE_REFRESH_TOKEN`
-4. El servidor Express sirve tanto la API como el frontend buildeado. Asegurarse de que el build de `ui-app` se corra antes del deploy (`npm run build` dentro de `ui-app/`)
+
+Railway detecta automáticamente el `package.json` raíz y corre `npm run build` (que instala deps y buildea `ui-app`) seguido de `npm start`. Todo en un solo servicio.
 
 ## Scripts disponibles
 
