@@ -99,7 +99,7 @@ app.patch("/api/plan/cell", async (req, res) => {
 })
 
 // SPA fallback — cualquier ruta no-API devuelve el index.html
-app.get("*", (_req, res) => {
+app.get("*splat", (_req, res) => {
     res.sendFile(join(distPath, "index.html"))
 })
 
