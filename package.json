@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "type": "module",
     "scripts": {
-        "build": "npm install --prefix ui-app && npm run build --prefix ui-app",
-        "start": "node --loader ts-node/esm src/server.ts",
+        "build": "npm install --prefix ui-app && npm run build --prefix ui-app && tsc --project tsconfig.json",
+        "start": "node dist/src/server.js",
         "test": "vitest --run",
         "test:watch": "vitest",
         "auth-setup": "node --loader ts-node/esm src/auth-setup.ts",
