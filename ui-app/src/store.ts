@@ -4,6 +4,33 @@ import type { AppState, Session } from "./types"
 import { buildAppState } from "./appState"
 import type { WorkoutPlan } from "./types"
 
+function showToast(message: string, duration = 5000) {
+    const existing = document.getElementById("gym-toast")
+    if (existing) existing.remove()
+
+    const el = document.createElement("div")
+    el.id = "gym-toast"
+    el.textContent = message
+    Object.assign(el.style, {
+        position: "fixed",
+        bottom: "24px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        background: "#e05",
+        color: "#fff",
+        padding: "12px 20px",
+        borderRadius: "10px",
+        fontSize: "0.85rem",
+        fontWeight: "600",
+        zIndex: "9999",
+        boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+        maxWidth: "90vw",
+        textAlign: "center",
+    })
+    document.body.appendChild(el)
+    setTimeout(() => el.remove(), duration)
+}
+
 export const useWorkoutStore = defineStore("workout", () => {
     const appState = ref<AppState | null>(null)
     const loading = ref(false)
@@ -71,7 +98,7 @@ export const useWorkoutStore = defineStore("workout", () => {
             rpe: ex.columns.rpe,
         }
 
-        await Promise.all(
+        const results = await Promise.all(
             Object.entries(fields)
                 .filter(([key, val]) => val !== undefined && colMap[key] != null)
                 .map(([key, val]) =>
@@ -82,6 +109,11 @@ export const useWorkoutStore = defineStore("workout", () => {
                     })
                 )
         )
+
+        const failed = results.find((r) => !r.ok)
+        if (failed) {
+            showToast(`Error al guardar (${failed.status}). Puede que haya que renovar el token.`)
+        }
     }
 
     return {
